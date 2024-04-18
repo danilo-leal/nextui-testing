@@ -51,12 +51,19 @@ export default function Home() {
         <Divider />
         <CardBody className="flex gap-4">
           <DatePicker label="Birth date" variant="bordered" />
-          <Button color="secondary" variant="bordered" onPress={onOpen}>
-            Open Modal
+          <Button
+            color="secondary"
+            variant="bordered"
+            onPress={onOpen}
+            className="border-1 bg-blue-50"
+          >
+            Open modal (custom 1px border and bg)
           </Button>
           <Dropdown>
             <DropdownTrigger>
-              <Button variant="bordered">Open Menu</Button>
+              <Button variant="bordered" className="shadow">
+                Open menu
+              </Button>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions">
               <DropdownItem key="new">New file</DropdownItem>
